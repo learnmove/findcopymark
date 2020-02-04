@@ -1,0 +1,26 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "logo.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+   } ],
+   "description": "quick to google then mark then copy word",
+   "icons": {
+      "128": "logo.png",
+      "16": "logo.png",
+      "48": "logo.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAroGVnc+nU8yorJOYsaTUNoY8udVL/h+ApsL0Ok9Eb+sRuaz1SaPgECzTM3Pd+2xNZT+yf9UEoId2sho7G3NAypvVGAQLLxRUd48/itTMYg+O46DKN+C4KkXOE5z5ZKZXki7Va1GUq6a6y6hNCbkOeGSid7JtPbBaRvWzOnm2vVGJDe58ZOLn6pxo+gqro7YTmkdaO4fI1SU15UBFIKmTMApljgO+j0Tb35qNqkXOhfgJ85jP2X64RfyvFG7B/ZYE3Mfh63w19ys6sS09zymmnVXPrCfDxVCfFJGo1+LSaCxTMi6UiiY4n9Ynhgar2OVOTL8dVDXb2znwx0Fbg7GzYwIDAQAB",
+   "manifest_version": 2,
+   "name": "FindMarkCopy",
+   "permissions": [ "activeTab", "tabs", "https://ajax.googleapis.com/", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "15.0",
+   "web_accessible_resources": [ "*.png", "*.gif" ]
+}
